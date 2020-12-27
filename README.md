@@ -1,14 +1,5 @@
-# BigBlueButton Docker
-
-[Changelog](CHANGELOG.md) | [Issues](https://github.com/alangecker/bigbluebutton-docker/issues)
-
-## Features
-- Easy installation
-- Greenlight included
-- TURN server included
-- Fully automated HTTPS certificates
-- Runs on almost any major linux distributon (Debian, Ubuntu, CentOS,...)
-- Full IPv6 support
+# BigBlueButton Docker Fork
+This is a fork of https://github.com/alangecker/bigbluebutton-docker. It is modified for the needs of my own server.
 
 ## Install
 1. Install docker-ce & docker-compose
@@ -33,16 +24,6 @@
     ```bash
     $ ./scripts/compose up -d
     ```
-8. If you use greenlight, you can create an admin account with:
-    ```bash
-    $ ./scripts/compose exec greenlight bundle exec rake admin:create
-    ```
-
-## How-To's
-- [Upgrade](docs/upgrading.md)
-- [Behind NAT](docs/behind-nat.md)
-- [BBB-Docker Development](docs/development.md)
-- [Integration into an existing web server](docs/existing-web-server.md)
 
 ## Special thanks to
-- @dkrenn, whos dockerized version (bigbluebutton#8858)(https://github.com/bigbluebutton/bigbluebutton/pull/8858) helped me a lot in understand and some configs.
+- @alangecker - This repository is forked from him. 
